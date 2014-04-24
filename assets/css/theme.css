@@ -1,0 +1,355 @@
+		#loading {
+			margin:15% auto;
+			width:50%;
+			z-index:10001;
+			display:none;
+		}
+
+		.load {
+			display:none;
+			font-size:25px;
+			font-family:"Segoe UI" !important;
+			font-weight:100;
+			text-transform:uppercase;
+			color:#9BD4FD;
+			display:block;
+			text-align:center;
+			background:#0059A0;
+			width:300px;
+			margin-top:10px;
+			padding:5px 0px;
+			border-radius:20px;
+			-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+			filter: url(#drop-shadow);
+			-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+			filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+			
+		}
+		#loading > img {
+			  -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+				filter: url(#drop-shadow);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+				filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+			width:180px;
+			height:180px;
+			margin:auto auto;
+			transition:all 500ms ease;
+			-webkit-transition: -webkit-transform 1s linear;
+			-webkit-transform: translateX(0%);
+		}
+		.ani {
+			margin-top:10px;
+			font-size:18px;
+			background:#0064B4;
+			width:200px;
+			padding:10px 20px;
+			border-radius:30px;
+			color:#56D3FF;
+			-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+				filter: url(#drop-shadow);
+				-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+				filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+		}
+		
+		
+		.progress {
+			height:17px;
+			border-radius:0px;
+		}
+		#login {
+			position:absolute;
+			top:0;
+			right:0;
+			padding-top:60px;
+			padding-left:-100px;
+			padding-right:-100px;
+			background-image:url('/CIMS/assets/img/pnp.svg');
+			background-repeat: no-repeat;
+			background-position:10% 50%;
+			background-size:25%;
+			width:100%;
+			height:100%;
+			-webkit-filter: blur(2px);
+		  -moz-filter: blur(2px);
+		  -o-filter: blur(2px);
+		  -ms-filter: blur(2px);
+		  filter: blur(2px);
+		  z-index:-100;
+		}
+		#panel-login {
+
+			margin:10% auto;
+			width:30%;
+		}
+		@media (max-width:768px) {
+			#panel-login {
+				margin:10% auto;
+				width:80%;
+			}
+			#login {
+				position:absolute;
+				top:0;
+				right:0;
+				padding-top:60px;
+				padding-left:-100px;
+				padding-right:-100px;
+				background-image:url('/CIMS/assets/img/pnp.svg');
+				background-repeat: no-repeat;
+				background-position:10% 50%;
+				background-size:25%;
+				width:100%;
+				height:100%;
+				-webkit-filter: blur(2px);
+				-moz-filter: blur(2px);
+				-o-filter: blur(2px);
+				-ms-filter: blur(2px);
+				filter: blur(2px);
+				z-index:-100;
+			}
+			.progress {
+				height:17px;
+				border-radius:0px;
+			}
+		}	
+		#body {
+			width:100%;
+			height:100%;
+			padding:50px;
+			padding-top:10px;
+			overflow:auto;
+			margin-top:20px;
+		}
+		body {
+			padding-top:50px;
+			position:fixed;
+			width:100%;
+			height:100%;
+		}
+		h1, h2, h3, h4, h5, h6, p, span, div, cite, input, textarea,label,.page-header >h2 {
+			font-family:"Segoe UI" !important;
+			font-size:100;
+			
+		}
+		.well,.btn,.panel,.panel-heading {
+			border-radius:0px;
+		}
+		
+		/** Nav Overide **/
+		
+		.navbar-brand {
+			padding:10px 20px;
+		}
+		.navbar-brand > span{
+			height:60px;
+			padding:0;
+			position:fixed;
+			//background:green;
+			width:220px;
+			margin-left:40px;
+			padding:2px;
+			font-family:"Stencil" !important;
+			font-size:28px;
+			padding-top:23px;
+			padding-left:12px;
+			color:#FFFFFF;
+			text-shadow:-1px 5px 0 #222222;
+			line-height:20px;
+			top:0;
+	
+			
+		}
+		.navbar-brand > span:hover{
+			color:#BBBBBB;
+		}
+		.navbar-brand > img {
+			width:auto;
+			height:50px;
+			padding-right:60px;
+			padding-top:5px;
+			margin-top:-7%;
+		}
+		.navbar-nav {
+			height:60px;
+		}
+		.navbar-nav > li >a {
+			height:60px;
+			width:60px;
+		}
+		.navbar-nav > li >a > i {
+			font-size:21px;
+			font-weight:100;
+		}
+		.navbar-nav > li > a {
+			font-size:21px;
+			
+			font-family: "Segoe UI Light";
+			
+		}
+		.navbar-nav > li.active {
+			text-shadow:0 0 10px #FFFFFF;
+			height:61px; 
+			
+		}
+		.navbar-nav > li > a {
+			background:rgba(0,0,0,0) !important;
+			color:#fff !important;
+			border-right:1px solid #222222;
+			text-align:center;
+			width:100%;
+			
+		}
+		/** nav colors **/
+				.green {
+					border-bottom: 4px solid #008C23 !important;
+					height:61px;
+					transition:all 500ms ease-in-out;
+				}
+				.green:hover {
+					background:#008C23 !important;
+					
+				}
+				.red {
+					border-bottom: 4px solid #8C0000 !important;
+					height:61px;
+					transition:all 500ms ease-in-out;
+				}
+				.red:hover {
+					background:#8C0000 !important;
+					
+				}
+				.orange {
+					border-bottom: 4px solid #D93600 !important;
+					height:61px;
+				}
+				.orange:hover {
+					background:#D93600 !important;
+					transition:all 500ms ease-in-out;
+				}
+				.blue {
+					border-bottom: 4px solid #002DB3 !important;
+					height:61px;
+				}
+				.blue:hover {
+					background:#002DB3 !important;
+					transition:all 500ms ease-in-out;
+				}
+				.red.active{
+					border-bottom: 5px solid #8C0000 !important;
+				}
+			/**end nav colors **/
+		/** End Overide **/
+		/** User menu **/
+		.navbar-form {
+			padding:0px
+		}
+		.agent-info {
+			
+			padding: 10px 15px;
+			margin-top:-10px;
+			margin-bottom:-10px;
+			line-height: 15px;
+			background: rgb(41, 41, 41);
+			height: 60px;
+			width:250px;
+		}
+		.shadow {
+			-webkit-box-shadow: 0px 0px 2px #000000;
+			-moz-box-shadow: 0px 0px 2px #000000;
+			box-shadow: 0px 0px 2px #000000;
+		}
+		.agent-pic {
+			float: left;
+			width: 40px;
+			height:40px;
+			margin: 0 7px 0 0;
+		}
+		.agent-pic > img {
+			height: auto;
+			max-width: 100%;
+			vertical-align: middle;
+			border: 0;
+			-ms-interpolation-mode: bicubic;
+		}
+		.agent-info .username {
+			margin-top: 1px;
+		}
+		.agent-info .username a.user {
+			color: #CCC;
+			font-weight: bold;
+			font-size: 12px;
+		}
+		.agent-info .username small {
+			color: #666;
+			font-size: 11px;
+		}
+		#logout {
+			font-size:20px;
+			color:#AAAAAA;
+			margin-top:-8px;
+			text-shadow:1px 1px 2px #444444;
+		}
+		#logout:hover {
+			font-size:20px;
+			color:#FFFFFF;
+			margin-top:-8px;
+			text-shadow:1px 1px 2px #444444;
+		}
+		
+		/** End user menu **/
+		
+		/** Loading **/
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.5);
+			z-index: 1001;
+			top:0;
+			left:0;
+		//	margin-top: 6.5%;
+		}
+		.overlay > .spinner {
+		
+			display: block;
+			border: 1px solid #A2A2A2;
+			width: 300px;
+			padding: 20px 10px;
+			background: #eee;
+			margin: 25% auto;
+			box-shadow: 0px 1px 3px #888686;
+		}
+		.spinner > img {
+			padding:5px;
+			width:50px;
+			height:50px;
+		}
+		/** END loading **/
+		
+		/**modals**/
+		.alert {
+			border-radius:0px;
+		}
+		.modal-alert {
+			height:100px;
+			padding-top:30px;
+			font-size:18px;
+			text-align:center;
+		}
+		
+		
+		/** FORM OVERRIDES **/
+		.form-group > label:not(.control-label) {
+			margin:5px 10px;
+		}
+		
+		/*** Button overides ****/
+		
+		.btn-sm {
+			margin-top:-5px;
+		}
+		
+		/**Dashboard**/
+		#nar-expanded {
+			cursor:pointer;
+		}

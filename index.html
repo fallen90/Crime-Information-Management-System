@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+       
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" content="" />
+          <meta name="author" content="" />
+          <link rel="icon" type="image/png" href="./assets/img/loading.png" />
+          <title>Crime Information Management System</title>
+          <!-- Bootstrap core CSS -->
+          <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+          <link href="./assets/css/bootstrap-theme.min.css" rel="stylesheet" />
+          <link href="./assets/css/theme.css" rel="stylesheet" />
+          <!-- Just for debugging purposes. Don't actually copy this line! -->
+          <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+          <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+          <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     </head>
+     <body>
+     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+               <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+               </button> 
+               <a class="navbar-brand" href="#">
+				<img src="./assets/img/loading.png" /> 
+               <span>CIMS</span></a>
+			   </div>
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                         <li class="red active">
+                              <a href="#home" >home</a>
+                         </li>
+                         <li class="orange">
+                              <a href="#search">search</a>
+                         </li>
+                         <li class="green">
+                              <a href="#about">about</a>
+                         </li>
+                         <li class="blue">
+                              <a href="#contact">settings</a>
+                         </li>
+                    </ul>
+                    <div class="navbar-form navbar-right">
+                         <div class="agent-info">
+                              <div class="agent-pic shadow">
+                                   <img id='agent-pic' src="/PMS/files/media/b0f9fe7e306d484ddb3a73952f11a4bc.gif" />
+                              </div>
+                              <div class="username">
+                              <a href="#" class="user">Jasper Cinatad</a>
+                              <br />
+                              <small>Administrator</small> 
+                              <a href="#" id="logout" class="visible-phone visible-tablet pull-right"></a></div>
+                         </div>
+                    </div>
+               </div>
+               <!--/.nav-collapse -->
+          </div>
+     </div>
+     <div class="progress progress-striped active" id="loader">
+          <div class="progress-bar" style="width: 100%"></div>
+     </div>
+     <div id="body" class="container">
+          <!--all contents would go here-->
+     </div>
+     <!-- /.container -->
+     <!-- Modal -->
+     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h4 class="modal-title" id="myModalLabel">{TITLE}</h4>
+                    </div>
+                    <div class="modal-body">{content}</div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+                    <button type="button" class="btn btn-primary" style="display:none">Save changes</button></div>
+               </div>
+               <!-- end modal content -->
+          </div>
+          <!--end modal-dialog-->
+     </div>
+     <!--end modal -->
+	 
+	 
+	  <!-- Modal -->
+     <div class="modal fade" id="blotterModal" tabindex="-1" role="dialog" aria-labelledby="blotterModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                         <h4 class="modal-title" id="blotterModalLabel">{TITLE}</h4>
+                    </div>
+                    <div class="modal-body">{content}</div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> 
+                    <button type="button" class="btn btn-primary" id="save_data">Save changes</button></div>
+               </div>
+               <!-- end modal content -->
+          </div>
+          <!--end modal-dialog-->
+     </div>
+     <!--end modal -->
+	 
+	 
+     <!-- small modal -->
+     <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="alert">
+          <div class="modal-dialog modal-lg">
+               <div class="alert alert-success alert-dismissable modal-alert">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+               <strong>Warning!</strong> Better check yourself, you&#39;re not looking too good.</div>
+          </div>
+     </div>
+     <!-- END MODALS -->
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+	 </div>
+	 <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.0.0/moment.min.js"></script>
+     <script src="./assets/js/jquery-1.10.2.js"></script> 
+     <script src="./assets/js/jquery-ui-1.10.4.custom.min.js"></script> 
+     <script src="./assets/js/bootstrap.min.js"></script> 
+     <script src="./assets/js/functions.js"></script> 
+     <script src="./assets/js/controller.js"></script> 
+     <script src="./assets/js/index.js"></script> 
+    
+     <script src="./assets/js/users.js"></script></body>
+</html>

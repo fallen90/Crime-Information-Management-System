@@ -1,0 +1,76 @@
+<div class="page-header">
+	<h2>Hello there,</h2>
+</div>
+
+<!-- User Panels -->
+<div class="row">
+	<div class="col-lg-6">
+		<!-- Quick Add Record -->
+		<div class="panel panel-primary">
+		
+			<div class="panel-heading">
+				<i class="glyphicon glyphicon-plus"></i> Quick Add Record
+			</div>
+			<div class="panel-body" id="quickadd">
+			 
+			
+				
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-lg-6">
+		<!-- Right Now Statistics -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Right Now <a id="rightnowL" class="btn btn-info btn-sm pull-right"><i class="glyphicon glyphicon-refresh"></i></a>
+			</div>
+			<div class="panel-body" id="rightnow">
+			</div>
+			
+		</div>
+	</div>	
+	
+	<div class="col-lg-6">
+		<!-- Right Now Statistics -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Recently Added Records <a id="recentL" class="btn btn-info btn-sm pull-right"><i class="glyphicon glyphicon-refresh"></i></a>
+			</div>
+			<div class="panel-body" id="recent">
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-6">
+		<!-- Right Now Statistics -->
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				Upcoming Events <a id="upcomingL" class="btn btn-info btn-sm pull-right"><i class="glyphicon glyphicon-refresh"></i></a>
+			</div>
+			<div class="panel-body" id="upcoming">
+			</div>
+		</div>
+	</div>
+</div>
+ <script src="./assets/js/dashboard.js"></script>
+<script>
+	$(function(){
+		loadPagelet("./pages/panels/dashboard/quickaddrecord.html","#quickadd","Loading Panel");
+		loadPagelet("./pages/panels/dashboard/rightnow.html","#rightnow","Loading Clock");
+		loadPagelet("./pages/panels/dashboard/recent.html","#recent","Fetching Recently Added Records");
+		loadPagelet("./pages/panels/dashboard/upcoming.html","#upcoming","Fetching Recently Added Records");
+		
+		$('#rightnowL').click(function(){
+			loadPagelet("./pages/panels/dashboard/rightnow.html","#rightnow","Reloading Clock");
+		});
+		
+		$('#recentL').click(function(){
+			loadPagelet("./pages/panels/dashboard/recent.html","#recent","Checking for Recently Added Records");
+		});
+		
+		$('#upcomingL').click(function(){
+			loadPagelet("./pages/panels/dashboard/upcoming.html","#upcoming","Checking for Upcoming Events");
+		});
+	});
+	
+</script>
